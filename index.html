@@ -20,6 +20,13 @@
             var date = new Date ( );
 
             // Alter these for your needs, watch the formatting, like trailing slashes and such.
+            // AUTHORIZATION: Note that the jQuery call "type" is set to GET.
+            // If you need to submit authorization, the VMTurbo API accepts the following format:
+            // "http://username:password@ipaddressOrDNS"
+            // If you have other web server authentication configurations in place,
+            // you'll need to understand how they can be worked with to enable http calls to the API endpoint.
+            // This can possibly mean changing the call type to POST and submitting the credentials in the head, etc.
+            // Lastly, most of these problems will not be an issue if you host the graph code on the appliance itself.
             var ipAddressOrDNSofAppliance = "http://administrator:administrator@10.10.172.50";
             var vmName = 'vm-922';
            
